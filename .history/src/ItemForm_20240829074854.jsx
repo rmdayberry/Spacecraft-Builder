@@ -17,12 +17,12 @@ const ItemForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const { itemName, qty, purpose } = formData;
-    setFormData(initalState);
     const newErrors = {};
     if (!itemName) newErrors.itemName = "Item name is required";
     if (!qty) newErrors.qty = "Quantity is required";
     if (!purpose) newErrors.purpose = "Purpose is required";
+    const { itemName, qty, purpose } = formData;
+    setFormData(initalState);
   };
 
   return (
