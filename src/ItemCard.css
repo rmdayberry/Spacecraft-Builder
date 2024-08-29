@@ -1,0 +1,17 @@
+.item-card {
+  border: 2px solid white;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.item-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.item-qty,
+.item-purpose {
+  font-size: 14px;
+  margin-top: 5px;
+}

@@ -70,9 +70,7 @@ const ItemForm = ({ addItem }) => {
         />
         {errors.purpose && <p style={{ color: "red" }}>{errors.purpose}</p>}
       </div>
-      <button className="addBtn" type="submit">
-        Add Item
-      </button>
+      <button type="submit">Add Item</button>
     </form>
   );
 };
