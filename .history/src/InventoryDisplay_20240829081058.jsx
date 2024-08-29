@@ -9,7 +9,7 @@ function InventoryDisplay({ inventory, deleteItem }) {
       {inventory.map((item, index) => (
         <div key={index}>
           <ItemCard item={item} />
-          <ItemAction itemName={itemName} deleteItem={deleteItem} />
+          <ItemAction deleteItem={() => deleteItem(item.name)} />
         </div>
       ))}
     </div>

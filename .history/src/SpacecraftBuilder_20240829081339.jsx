@@ -6,7 +6,7 @@ function SpacecraftBuilder() {
   const [inventory, setInventory] = useState([]);
 
   const addItem = (item) => {
-    setInventory((prevInventory) => [...prevInventory, item]);
+    setInventory((prevInventory) => [...inventory, item]);
   };
 
   const deleteItem = (itemName) => {
@@ -19,7 +19,6 @@ function SpacecraftBuilder() {
     <div>
       <h1>Spacecraft Builder</h1>
       <ItemForm addItem={addItem} />
-      <InventoryDisplay inventory={inventory} deleteItem={deleteItem} />
     </div>
   );
 }
